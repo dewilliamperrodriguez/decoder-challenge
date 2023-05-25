@@ -1,0 +1,124 @@
+* {
+    background-color: #E5E5E5;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+  }
+  
+  .logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 2%;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-left: 80px;
+  }
+  
+  .text-area {
+    border: none;
+    color: #0a3781;
+    margin-top: 90px;
+    text-transform: lowercase;
+  }
+  
+  ::placeholder {
+    color: #0a3781;
+  }
+  
+  .text-area:focus {
+    outline: none;
+  }
+  
+  .mensaje {
+    background-color: white;
+    background-image: url(imagenes/Muñeco.png);
+    background-repeat: no-repeat;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    resize: none;
+  }
+  
+  .mensaje:focus {
+    outline: none;
+  }
+  
+  .botones {
+    display: flex;
+    margin-top: 18px;
+  }
+  
+  .btn-desencriptar {
+    background-color: #d8dfd8;
+    border-radius: 1px solid #0a3781;
+    border-radius: 24px;
+    color: #0a3781;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+  }
+  
+  .btn-encriptar {
+    background-color: #0a3781;
+    border: 1px solid #0a3781;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+  }
+  
+  .copiar {
+    border: 1px solid #0a3781;
+    border-radius: 24px;
+    color: #0a3781;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+  }
+  
+  .informacion {
+    color: #495057;
+    font-size: 18px;
+  }
+  
+  /* Media queries para diseño responsive */
+  
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 20px;
+    }
+  
+    .mensaje {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .copiar {
+      margin-top: 20px;
+      margin-left: 0;
+      position: relative;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      width: 2%;
+    }
+  
+    .text-area,
+    .mensaje,
+    .btn-encriptar,
+    .btn-desencriptar,
+    .copiar {
+      width: 100%;
+    }
+  }
+  
